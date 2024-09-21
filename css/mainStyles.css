@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    /* font-size: 3rem; */
+    overflow: hidden;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+#container {
+    width: 100%;
+}
+
+#screen-details {
+    font-size: 1.2rem;
+    color: blue;
+}
+
+#branding {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+#branding img {
+    max-width: 55%;
+}
+
+.menuSection {
+    margin: 2rem 0;
+}
+
+.productLine {
+    margin: 0.5rem 0 0;
+    font-size: 2rem;
+    padding: 0.25rem 0 0;
+    display: grid;
+    grid-template-columns: 5fr repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "productname" "productsize" "productsize" "productsize" "productsize" "productsize"
+    ;
+    border-bottom: 0.05rem dotted gray
+}
+
+.nameListing {
+    text-transform: capitalize;
+    grid-area: 'productname';
+}
+
+.sizeListing {
+    grid-area: 'productsize';
+    text-align: center;
+}
+
+.featured {
+    display: inline-block;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0033cc, #0055ff, #0099ff, #00ccff, #66ccff, #99ccff, #00ccff, #0099ff, #0055ff, #0033cc);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: highlight-animation 3s linear infinite;
+}
+
+@keyframes highlight-animation {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+}
