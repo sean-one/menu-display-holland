@@ -35,7 +35,7 @@ function displayScreenSize() {
     const orientation = (screenWidth > screenHeight) ? 'landscape' : 'portrait';
 
     if (screenSizeElement) {
-        screenSizeElement.textContent = `width: ${screenWidth}, height: ${screenHeight}, ratio: ${pixelRatio}, orientation: ${orientation}`;
+        screenSizeElement.textContent = `width: ${screenWidth}, height: ${screenHeight}, ratio: ${pixelRatio}, orientation: ${orientation}, url: ${MENU_URL}`;
     }
 }
 
