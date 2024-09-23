@@ -30,12 +30,13 @@ body {
 }
 
 .menuSection {
+    font-size: 2rem;
     margin: 2rem 0;
 }
 
 .productLine {
     margin: 0.5rem 0 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0.25rem 0 0;
     display: grid;
     grid-template-columns: 5fr repeat(5, 1fr);
