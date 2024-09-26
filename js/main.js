@@ -45,7 +45,10 @@ async function fetchMenuData() {
         const data = await response.json();
 
         if (data.flower) {
-            displayFlowerData(data.flower)
+            // inactive products removed
+            const inactiveRemoved = data?.flower.filter(product => product.active === true)
+            console.log(inactiveRemoved)
+            displayFlowerData(inactiveRemoved)
         } else {
             console.error('no flower data found')
         }
