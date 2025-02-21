@@ -11,6 +11,7 @@ body {
     max-height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: space-between;
     justify-content: space-around;
 }
 
@@ -19,14 +20,14 @@ body {
     align-items: center;
     justify-content: space-around;
     color: white;
-    font-size: 11.5rem;
+    font-size: 14rem;
     font-weight: bold;
     text-align: center;
 }
 
 .brand-container {
     padding: 2.5rem;
-    max-width: 42rem
+    max-width: 48rem
 }
 
 .brand-container img {
