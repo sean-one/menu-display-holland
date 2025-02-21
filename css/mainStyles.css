@@ -23,6 +23,7 @@ body {
     font-size: 14rem;
     font-weight: bold;
     text-align: center;
+    border: 1px solid red;
 }
 
 .brand-container {
@@ -38,6 +39,7 @@ body {
 
 .flyer-container {
     max-width: 100%;
+    border: 1px solid yellow;
 }
 
 .flyer-container img {
