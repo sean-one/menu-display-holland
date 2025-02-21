@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    adjustFontSize()
+    // adjustFontSize()
     displayScreenSize()
     fetchMenuData()
     setInterval(fetchMenuData, 15000) // every 15 seconds
